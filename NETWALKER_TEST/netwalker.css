@@ -1,0 +1,145 @@
+:root{
+    --main-color: rgba(161, 43, 43, 1);
+    --main-font: Roboto;
+}
+html, html *, html::after, html::before{
+    box-sizing:border-box;
+    font-family:monospace;
+}
+html > *{
+    margin:0px;
+}
+img{width:20px;height:20px}
+div, p, h1, h2, h3, h4, h5, h6{margin:0px; padding:0px;}
+.container{
+
+}
+
+header{
+    background: white;
+    box-shadow: 4px 4px 3px 0px rgba(66,58,58,0.15);
+    display:flex;
+    flex-direction:row;
+    flex-flow:row wrap;
+    align-items: flex-end;
+    align-content:flex-end;
+    padding-top:30px;
+}
+header > div{
+    margin:0px;
+   display:flex;
+   align-items:flex-end;
+}
+header > div > *{
+    align-self:center;
+}
+header > .first{
+    margin-right:15vw;
+}
+header > .first *{
+    margin:0 0 0 3px;
+    padding:0 2px;
+    height:20px;
+}
+header > .middle{
+    flex:1;
+}
+header> .last{
+    align-self:flex-end;
+}
+header img{width:20px}
+header .first > .logo{
+    background:var(--main-color);
+    width:30px;
+    height:25px;
+}
+header .first > p{
+    border: 2px solid var(--main-color);
+    height:23px;
+}
+header > .middle > *{
+    padding:0 3px;
+    font-size:20px;
+}
+section{
+    display:flex;
+}
+section img{width:15px;height:15px}
+section  > .to_the_left{
+    margin:10px 5px 0px 0px;
+    width:30%;
+    background: white;
+    box-shadow: 4px 4px 3px 0px rgba(66,58,58,0.15);
+}
+
+.to_the_left > div{
+    padding:7px;
+    display:flex;
+}
+.to_the_left > div > p{margin-left:10px;flex:1}
+section > .to_the_right{
+    width:70%;
+    margin-top:10px;
+    background: white;
+    box-shadow: 4px 4px 3px 0px rgba(66,58,58,0.15);
+    position:relative;
+}
+.to_the_right > .no_logout{
+    margin-top: 10px;
+    width: 200px;
+    background: white;
+    box-shadow: 2px 2px 3px 0px rgb(66 58 58 / 15%), 0px -2px 3px rgb(66 58 58 / 15%);
+    position: absolute;
+    right: 170px;
+    top: -20px;  
+    z-index:1;
+}
+.to_the_right > .no_logout > p{
+    display:flex;
+}
+.to_the_right > .no_logout > p > *{
+    margin:5px;
+}
+.to_the_right > .no_logout small{
+    display:flex;
+    flex-direction:column;
+}
+.no_logout > *, .logout > * {padding:10px}
+
+.to_the_right > .logout{
+    margin-top: 10px;
+    width: 200px;
+    background: white;
+    box-shadow: 2px 2px 3px 0px rgb(66 58 58 / 15%), 0px -2px 3px rgb(66 58 58 / 15%);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.to_the_right > .logout > p{
+    display:flex;
+}
+.to_the_right > .logout > p > *{
+    margin:5px;
+}
+.to_the_right > .logout small{
+    display:flex;
+    flex-direction: column;
+}
+.logout > .button{
+    background: var(--main-color);
+    padding: 3px;
+    color: white;
+    width: 90%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 3px 30%;
+}
+.to_the_right > .show_off{
+    color:var(--main-color);
+    width: 100%;
+    font-size: xxx-large;
+    font-weight:bold;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
